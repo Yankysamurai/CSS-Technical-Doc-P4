@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Introduction</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+        <li><a class="nav-link" href="#Selectors">Selectors</a></li>
+        <li><a class="nav-link" href="#How_to_add_css">How To Add CSS</a></li>
+        <li><a class="nav-link" href="#Comments">Comments</a></li>
+        <li><a class="nav-link" href="#Borders">Borders</a></li>
+        <li><a class="nav-link" href="#Margins">Margins</a></li>
+        <li><a class="nav-link" href="#Icons">Icons</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>CSS is the language we use to style a Web page.</p>
+          <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>
+              CSS describes how HTML elements are to be dispalyed on screen,
+              paper, or in other media
+            </li>
+            <li>
+              CSS saves a lot of work. It can control the layout of multiple
+              pages all at once
+            </li>
+            <li>External stylesheets are stored in CSS files</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Syntax">
+        <header>Syntax</header>
+        <article>
+          <p>A CSS rule consists of a selector and a declaration block.</p>
+          <p>The selector points to the HTML element you want to style.</p>
+          <p>
+            The declaration block contains one or more declarations separated by
+            semicolons.
+          </p>
+          <p>
+            Each declaration includes a CSS property name and a value,
+            separated by a colon.
+          </p>
+          <p>
+            Multiple CSS delarations are separated with semicolons, and
+            declaration blocks are surrounded by curly braces.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Selectors">
+        <header>Selectors</header>
+        <article>
+          <p>A CSS selector selects the HTML element you want to style.</p>
+          <p>
+            CSS selectors are used to "find" (or select) the HTML elements you
+            want to style
+          </p>
+          <p>We can divide CSS selectors into five categories:</p>
+          <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>
+              Combinator selectors (select elements based on a specific
+              relationship between them)
+            </li>
+            <li>
+              Psuedo-class selectors (select elements based on a certain state)
+            </li>
+            <li>
+              Psuedo-elements selectors (select and style a part of an element)
+            </li>
+            <li>
+              Attribute selectors (select elements based on an attribute or
+              attribute value)
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="How_to_add_css">
+        <header>How To Add CSS</header>
+        <article>
+          <p>
+            When a browser reads a style sheet, it will format the HTML document
+            according to the information in the style sheet.
+          </p>
+          <p>There are three ways of inserting a style sheet:</p>
+
+          <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+          </ul>
+          <h3>External CSS</h3>
+          <p>
+            With an external style sheet, you can change the look of an entire
+            website by changing just one file!
+          </p>
+          <p>
+            Each HTML page must include a reference to the external style sheet
+            file inside the <code>&lt;link&gt;</code> element, inside the head
+            section.
+          </p>
+          <h3>Internal CSS</h3>
+          <p>
+            An internal style sheet may be used if one single HTML page has a
+            unique style.
+          </p>
+          <p>
+            The internal style is defined inside the
+            <code>&lt;style&gt;</code> element, inside the head section.
+          </p>
+          <h3>Inline CSS</h3>
+          <p>
+            An inline style sheet may be used to apply a unique style for a
+            single element.
+          </p>
+          <p>
+            To use inline styles, add the style attribute to the relevant
+            element. The style attribute can contain any CSS property.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <article>
+          <p>
+            Comments are used to explain the code, and may help when you edit
+            the source at a later date.
+          </p>
+          <p>Comments are ignored by browsers.</p>
+          <p>
+            A CSS comment is placed inside the 
+            <code>&lt;style&gt;</code> element, and starts with a
+            <code>/*</code> and ends with a <code>*/</code>.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Borders">
+        <header>Borders</header>
+        <article>
+          <p>
+            The CSS border properties allow you to specify the style, width, and
+            color of an element's border.
+          </p>
+          <p>
+            The <code>border-style</code> property specifies what kind of border
+            to display.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Margins">
+        <header>Margins</header>
+        <article>
+          <p>
+            The CSS margin properties are used to create space around elements,
+            outside of any defined borders.
+          </p>
+          <p>
+            With CSS, you have full control over the margins. There are
+            properties for setting the margin for each side of an element (top,
+            right, bottom, and left).
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Icons">
+        <header>Icons</header>
+        <article>
+          <p>
+            Icons can easily be added to your HTML page by using an icon
+            library, such as Font Awesome.
+          </p>
+          <p>
+            Add the name of the specified icon class to any inline HTML element
+            (like <code>&lt;i&gt;</code> or <code>&lt;span&gt;</code>).
+          </p>
+          <p>
+            All the icons in the icon libraries are scalable vectors that can
+            be customized with CSS (size, color, shadow, etc.)
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="https://www.w3schools.com/css/" target="blank">W3Schools</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
